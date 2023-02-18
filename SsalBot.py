@@ -35,7 +35,7 @@ async def 쌀산기(ctx,gold = None, mancount = None):
             ssalresult = int(gold) * 0.95 * ((int(mancount)-1) / int(mancount)) / 1.1
             equalresult = int(gold) * 0.95 * ((int(mancount)-1) / int(mancount))
             equalgold = int(gold)* 0.95 / int(mancount)
-            await ctx.send(f'>>> <@{ctx.author.id}> 님이 요청해주신 **{int(gold)} 골드**에 대한 **{int(mancount)}인** 파티 계산 금액\n\n경매 최적가 : **{int(ssalresult)} 골드**\n균등 분배가 : **{int(equalresult)} 골드** | 1인당 분배 골드 : **{int(equalgold)} 골드*')
+            await ctx.send(f'>>> <@{ctx.author.id}> 님이 요청해주신 **{int(gold)} 골드**에 대한 **{int(mancount)}인** 파티 계산 금액\n\n경매 최적가 : **{int(ssalresult)} 골드**\n균등 분배가 : **{int(equalresult)} 골드** | 1인당 분배 골드 : **{int(equalgold)} 골드**')
     except:
         await ctx.send(f'>>> <@{ctx.author.id}> 님, 명령어 사용법을 숙지후 사용해주세요! \n!사용법\n입력된 명령어: **{ctx.message.content}**')
 
